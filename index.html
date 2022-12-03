@@ -34,10 +34,9 @@
     <div class="form-2">
         <form-2>
             <label> Your Text:<br />
-                <input type='text' class="profile-name" placeholder="Your text">
+                <textarea oninput="document.querySelector('a').href='data:text/plain;base64,' + btoa(this.value)"></textarea>
             </label>
-
-            <button type="submit">Submit Text</button>
+		<a href="data:text/plain;base64," download="text.txt"><button>Submit Text</button></a>
             </form>
     </div>
 <!--******************************************************************************************************************************-->
